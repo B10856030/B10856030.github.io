@@ -22,6 +22,10 @@
                 display: block;
                 width: 100%;
             }
+            .pic {
+                max-width: 100%;
+                height: auto;
+            }
         }
         
         .topnav {
@@ -68,19 +72,36 @@
             -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
         }
+        
+        .footer {
+            background-color: sienna;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
     </style>
 </head>
 
 <body>
     <header>~貓貓的家~</header>
-    <nav class="topnav">
-        <a href="#"><img src="knitting5.png" height="30px" width="30px"></a>
-        <a href="#"><img src="heart4.png" height="30px" width="30px"></a>
-        <a href="#"><img src="food3.png" height="30px" width="30px"></a>
-        <a href="#"><img src="cat2.png" height="30px" width="30px"></a>
-        <a href="#"><img src="browser1.png" height="30px" width="30px"></a>
-    </nav>
-
+    <marquee direction="right" height="30" scrollamount="5" behavior="alternate">
+        ~歡迎來到貓貓的家，這裡會為你介紹各類貓咪、他們的喜好、食物、玩具...等<img src="sticker.png" width="25" height="25">~
+    </marquee>
+    <section>
+        <nav class="topnav">
+            <a href="#"><img alt="玩具" src="knitting5.png" height="30px" width="30px"></a>
+            <a href="#"><img alt="喜歡的東西" src="heart4.png" height="30px" width="30px"></a>
+            <a href="#"><img alt="食物" src="food3.png" height="30px" width="30px"></a>
+            <a href="#"><img alt="種類" src="cat2.png" height="30px" width="30px"></a>
+            <a href="index.html"><img alt="首頁" src="browser1.png" height="30px" width="30px"></a>
+        </nav>
+        <img src="o.png" title="自己畫工不足，只能畫這樣QAQ~" class="pic">
+    </section>
+    <div class="footer">
+        <p>請友善對待，珍惜愛護</p>
+        <p>版權所有，翻印必究</p>
+    </div>
 </body>
 
 </html>
