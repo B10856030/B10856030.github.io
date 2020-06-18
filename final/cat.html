@@ -4,16 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>毛孩食材</title>
     <style>
         body {
             background-color: papayawhip;
         }
         
+        * {
+            /*消除網頁邊框*/
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .title h2 {
+            text-align: center;
+            font-size: 46px;
+        }
+        
+        .title {
+            margin: 0 0px 10px;
+            padding: 20px 10px;
+            background-color: #ccc;
+        }
+        
+        .title p {
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        .item {
+            margin: 0 10px 20px;
+        }
+        
+        .item .text h3 {
+            font-size: 24px;
+            text-align: center;
+            font-family: 微軟正黑體;
+        }
+        
+        .item .pic img {
+            width: 100%;
+        }
+        
+        .two {
+            margin: 60px 0;
+            background-color: #fff;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .item-group {
+                display: flex;
+                /*彈性盒子*/
+            }
+        }
+        
+        .item text h4 {
+            font-size: 24px;
+            text-align: left;
+            font-family: 微軟正黑體;
+        }
+        
         header {
             text-align: center;
             font-family: 微軟正黑體;
-            font-size: 48px;
+            font-size: 60px;
+        }
+        
+        strong {
+            color: red;
+            font-weight: bolder;
+            background-color: khaki;
         }
         
         @media screen and (max-width: 600px) {
@@ -85,19 +146,161 @@
 
 <body>
     <header>貓咪的食物</header>
-    <h2 style="font-size: 20px;text-align: center;font-family: 微軟正黑體;color: tomato;">~對貓咪來說有營養的食物~</h2>
+    <h2 style="font-size: 32px;text-align: center;font-family: 微軟正黑體;color: tomato;">~對貓咪來說有營養的食物~</h2>
 
     <section>
         <nav class="topnav">
             <a href="#"><img alt="玩具" src="knitting5.png" height="30px" width="30px"></a>
-            <a href="#"><img alt="食物" src="food3.png" height="30px" width="30px"></a>
+            <a href="cat.html"><img alt="食物" src="food3.png" height="30px" width="30px"></a>
             <a href="https://www.royalcanin.com/tw/cats/breeds/breed-library" target="_blank"><img alt="種類" src="cat2.png" height="30px" width="30px"></a>
             <a href="index.html"><img alt="首頁" src="browser1.png" height="30px" width="30px"></a>
         </nav>
+        <div class="item-group">
+            <div class="item">
+                <div class="pic">
+                    <img src="鮭魚.png" title="鮭魚">
+                </div>
+                <div class="text">
+                    <h3>1.鮭魚</h3>
+                    <p>
+                        <h4>鮭魚含有Omega 3，對貓貓的<strong>心臟</strong>和<strong>免疫系統</strong>都有幫助。
+                            <br>豐富的油脂也有助於貓貓毛<strong>皮滑順柔亮</strong>。
+                            <br>飼主記得先將<strong>魚刺挑乾淨</strong>，貓貓才能安心吃喔</h4>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="雞胸肉_3-300x143.png" title="雞胸肉">
+                </div>
+                <div class="text">
+                    <h3>2.雞胸肉</h3>
+                    <p>
+                        <h4>雞胸肉含有<strong>優質的動物性蛋白</strong>，雞肉也是許多貓咪喜愛的肉類。<br>記得在料理時
+                            <strong>不要加鹽</strong>，才能保護貓咪的腎臟健康。</h4>
+
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="木瓜-300x251.png" title="木瓜">
+                </div>
+                <div class="text">
+                    <h3>3.木瓜</h3>
+                    <p>
+                        <h4>木瓜中豐富的<strong>酵素</strong>，有助於蛋白質分解，很適合貓咪補充。
+                            <br>建議挑選無瘀斑、色澤飽滿的木瓜，必將<strong>內籽去除乾淨</strong>。
+                            <br>但木瓜<strong>糖分高</strong>，請飼主適量、分次補充，以免貓咪發福喔！</h4>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="fruit.png" title="花椰菜">
+                </div>
+                <div class="text ">
+                    <h3>4.花椰菜</h3>
+                    <p>
+                        <h4>花椰菜含有著豐富的<strong>纖維素</strong>與<strong>維他命 C</strong> ，是貓咪較能接受的「菜味」。
+                            <br>雖然貓咪是肉食性動物，但適量補充纖維，仍<strong>有助腸胃功能運作</strong>。</h4>
+
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="pumpkin.png" title="南瓜">
+                </div>
+                <div class="text">
+                    <h3>5.南瓜</h3>
+                    <p>
+                        <h4>南瓜的產季在秋天，包含葉酸、鈣、磷、鉻…等多種微量營養素。
+                            <br>但南瓜屬於<strong>高 GI </strong>水果，容易讓血糖快速上升，有<strong>糖尿病貓咪應小心避免</strong>！
+                            <br></h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="item-group">
+            <div class="item">
+                <div class="pic">
+                    <img src="watermelon.png" title="西瓜">
+                </div>
+                <div class="text">
+                    <h3>6.西瓜</h3>
+                    <p>
+                        <h4>西瓜有助於貓咪<strong>補充水分</strong>，也有利尿的功效，炎熱的夏天更是<strong>開胃</strong>的好選擇。
+                            <br>但西瓜<strong>糖分較高</strong>、籽也多，請適量餵食、小心去籽以免貓咪拉肚子呦。
+                            <br></h4>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="優格-300x294.png" title="優格">
+                </div>
+                <div class="text">
+                    <h3>7.無調味優格</h3>
+                    <p>
+                        <h4>優格含有維生素B群和鈣質，更將部分<strong>乳糖轉化為乳酸</strong>，較適合<strong>乳糖不耐症</strong>的貓咪。
+                            <br>若要餵貓咪吃優格，請選擇<strong>無添加、無調味</strong>的優格才更健康喔！<br></h4>
+
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="cheese.png" title="無鹽起司">
+                </div>
+                <div class="text">
+                    <h3>8.無鹽起司</h3>
+                    <p>
+                        <h4>起司能提供蛋白質、脂質與鈣質，濃郁的香氣貓咪也非常喜歡。
+                            <br>請選擇<strong>無鹽</strong>起司，以免<strong>鈉攝取過量</strong>反傷了貓咪身體喔！
+                            <br></h4>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="carrot.png" title="胡蘿蔔">
+                </div>
+                <div class="text ">
+                    <h3>9.胡蘿蔔</h3>
+                    <p>
+                        <h4>雖然<strong>貓咪無法自行將胡蘿蔔素轉化為維生素A…</strong>
+
+                            <br> 但胡蘿蔔的營養成分高，仍有助於補充多種微量維生素。
+
+                            <br> 生胡蘿蔔不好消化，建議煮熟後<strong>切成小塊</strong>或<strong>切丁乾燥</strong>後再給貓咪吃更好喔！
+                        </h4>
+
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="egg.png" title="熟雞蛋">
+                </div>
+                <div class="text">
+                    <h3>10.熟雞蛋</h3>
+                    <p>
+                        <h4>雞蛋是很好的蛋白質來源，貓貓<strong>胃口不好</strong>或是<strong>生病</strong>的時候可以餵雞蛋補充能量與營養。
+                            <br> 但記得將雞蛋<strong>煮熟</strong>，避免攝取過量，以免膽固醇過高喔！
+                            <br></h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
 
 
     </section>
-    <div class="footer">
+    <div class="footer ">
         <p>請友善對待，珍惜愛護</p>
         <p>版權所有，翻印必究</p>
     </div>
